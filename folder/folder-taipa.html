@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Estúdio Taipa · Folder</title>
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Work+Sans:wght@400;600;700&display=block" rel="stylesheet">
+<style>
+/* Folder de uma face · A5 em pé (148 × 210 mm) — imprime também em A4 ampliando */
+@page{size:148mm 210mm;margin:0}
+:root{--papel:#f5e8d5;--barro:#c4532d;--carvao:#2a1d17;--ocre:#e0a23c;--verde:#2f8a83;--suave:#6b5544}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{font-family:"Work Sans",sans-serif;color:var(--carvao)}
+.folha{width:148mm;height:210mm;position:relative;overflow:hidden;background:var(--papel);display:flex;flex-direction:column;align-items:center;text-align:center}
+.bandeiras{position:absolute;left:0;right:0;top:0;width:100%;height:11mm}
+.logo{width:84mm;margin-top:10mm}
+.slogan{font-family:"Bowlby One";font-size:15pt;line-height:1.08;margin-top:1mm}
+.slogan span{color:var(--barro)}
+.frase{font-size:9pt;color:var(--suave);max-width:110mm;margin-top:2.5mm;line-height:1.4}
+.tela{width:104mm;height:62mm;margin-top:4.5mm;border-radius:5mm;overflow:hidden;position:relative;border:.7mm solid var(--carvao);box-shadow:1.6mm 1.6mm 0 var(--carvao);background:radial-gradient(circle at 50% 30%,#3a2318,#140d0a 78%)}
+.tela svg{width:100%;height:100%}
+.tela .sol{position:absolute;top:6mm;left:14mm;width:9mm;height:9mm;border-radius:50%;background:#f0b44c;box-shadow:0 0 7mm #f0b44c}
+.tela .q{position:absolute;bottom:2mm;left:3mm;font:700 5.5pt "Work Sans";color:#b9a78f;letter-spacing:.15em}
+.tela .rec{position:absolute;bottom:2mm;right:3mm;font:700 5.5pt "Work Sans";color:#ff6b5a;letter-spacing:.15em}
+.rodape{margin-top:auto;width:100%;background:var(--carvao);color:var(--papel);padding:6mm 9mm;display:flex;gap:6mm;align-items:center;text-align:left}
+.qr{flex:none;width:38mm;height:38mm;padding:2.6mm;background:#fff;border-radius:3mm;box-shadow:1.4mm 1.4mm 0 var(--barro)}
+.qr img{width:100%;height:100%;display:block}
+.chamada{font-family:"Bowlby One";font-size:13pt;line-height:1.08}
+.chamada span{color:var(--ocre)}
+.url{font-weight:700;font-size:10pt;color:var(--ocre);margin-top:2mm}
+.dados{margin-top:3mm;font-size:7.8pt;line-height:1.6;color:#d8c7ae}
+.dados b{color:var(--papel);font-weight:600}
+</style>
+</head>
+<body>
+<div class="folha">
+  <svg class="bandeiras" id="band" viewBox="0 0 148 11" preserveAspectRatio="none"></svg>
+  <img class="logo" src="../img/logo.webp" alt="Estúdio Taipa">
+  <div class="slogan">Construímos o Brasil <span>quadro a quadro</span></div>
+  <p class="frase">Produtora cultural independente de Stop Motion. Personagens, cenários e histórias brasileiras feitos à mão.</p>
+  <div class="tela"><div class="sol"></div><svg id="cena" viewBox="0 60 400 240" preserveAspectRatio="xMidYMax slice"></svg><div class="q">QUADRO 0024</div><div class="rec">● REC</div></div>
+
+  <div class="rodape">
+    <div class="qr"><img src="qr-site.svg" alt="QR code para estudiotaipa.pages.dev"></div>
+    <div>
+      <div class="chamada">Aponte a câmera<br><span>e conheça o estúdio</span></div>
+      <div class="url">estudiotaipa.pages.dev</div>
+      <!-- TROCAR: Instagram e WhatsApp reais -->
+      <div class="dados">
+        <b>Instagram</b> @estudiotaipa<br>
+        <b>WhatsApp</b> (11) 00000-0000<br>
+        <b>Sede</b> Vila Mariana · São Paulo – SP
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>const $ = s => document.querySelector(s), reduz = true;</script>
+<script src="boneco.js"></script>
+<script>
+  const cores = ['#e2735a','#e0a23c','#2f8a83','#2a1d17','#9b7ad6'];
+  $('#band').innerHTML = '<path d="M0,2 Q74,4 148,2" stroke="#2a1d17" stroke-width=".3" fill="none" opacity=".5"/>' +
+    Array.from({length: 16}, (_, i) => `<path d="M${3 + i*9.1},${2.4 + (i%2)*.4} l4.4,0 l-2.2,6z" fill="${cores[i%5]}"/>`).join('');
+  const av = animarCena($('#cena'), true, 'f'); for (let i = 0; i < 5; i++) av();
+  $('#cena').style.filter = 'none';
+</script>
+</body>
+</html>
