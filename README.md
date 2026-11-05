@@ -9,15 +9,15 @@ que leva a cultura popular ao audiovisual por meio do **Stop Motion**.
 
 <br/>
 
-<a href="https://estudiotaipa.pages.dev/"><img src="https://img.shields.io/badge/ACESSAR_O_SITE-d8613a?style=for-the-badge&logo=googlechrome&logoColor=f4ecdc" alt="Acessar o site" /></a>
+<a href="https://estudiotaipa.pages.dev/"><img src="img/readme/acessar.svg" alt="Acessar o site" /></a>
 
 <br/><br/>
 
-<img src="https://img.shields.io/badge/HTML5-140d0a?style=flat-square&logo=html5&logoColor=f0b44c" alt="HTML5" />
-<img src="https://img.shields.io/badge/CSS3-140d0a?style=flat-square&logo=css&logoColor=f0b44c" alt="CSS3" />
-<img src="https://img.shields.io/badge/JavaScript-140d0a?style=flat-square&logo=javascript&logoColor=f0b44c" alt="JavaScript" />
-<img src="https://img.shields.io/badge/SVG-140d0a?style=flat-square&logo=svg&logoColor=f0b44c" alt="SVG" />
-<img src="https://img.shields.io/badge/Cloudflare_Pages-140d0a?style=flat-square&logo=cloudflarepages&logoColor=f0b44c" alt="Cloudflare Pages" />
+<img src="img/readme/html.svg" alt="HTML5" />
+<img src="img/readme/css.svg" alt="CSS3" />
+<img src="img/readme/js.svg" alt="JavaScript" />
+<img src="img/readme/svg.svg" alt="SVG" />
+<img src="img/readme/cloudflare.svg" alt="Cloudflare Pages" />
 
 </div>
 
@@ -50,7 +50,7 @@ O site foi **pensado primeiro para o celular** e respeita `prefers-reduced-motio
 
 ## 🎨 Paleta
 
-<img src="https://img.shields.io/badge/fundo-%23140d0a-140d0a?style=flat-square" alt="#140d0a" /> <img src="https://img.shields.io/badge/barro-%23d8613a-d8613a?style=flat-square" alt="#d8613a" /> <img src="https://img.shields.io/badge/ocre-%23f0b44c-f0b44c?style=flat-square" alt="#f0b44c" /> <img src="https://img.shields.io/badge/verde-%233aa59c-3aa59c?style=flat-square" alt="#3aa59c" /> <img src="https://img.shields.io/badge/papel-%23f4ecdc-f4ecdc?style=flat-square" alt="#f4ecdc" />
+<img src="img/readme/cor-fundo.svg" alt="#140d0a" /> <img src="img/readme/cor-barro.svg" alt="#d8613a" /> <img src="img/readme/cor-ocre.svg" alt="#f0b44c" /> <img src="img/readme/cor-verde.svg" alt="#3aa59c" /> <img src="img/readme/cor-papel.svg" alt="#f4ecdc" />
 
 Tipografia: **Bowlby One** nos títulos e **Work Sans** nos textos.
 
